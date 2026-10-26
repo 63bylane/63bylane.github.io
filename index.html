@@ -978,7 +978,7 @@ h1,h2,h3,p{margin:0}
       <span class="kick" style="color:var(--orange)">Privacy policy</span>
       <h1 class="h2" id="pvh">Your data, kept simple<span class="dot">.</span></h1>
       <p class="lede">This website collects very little: only what you choose to send us, such as a job application or a WhatsApp message.</p>
-      <p class="pv-date">Last updated: 24 October 2026</p>
+      <p class="pv-date">Last updated: 26 October 2026</p>
     </div>
   </div>
   <div class="wrap pv-body">
@@ -1006,7 +1006,7 @@ h1,h2,h3,p{margin:0}
       <li><b>WhatsApp, calls and email:</b> to reply to you, help with an order or feedback, and, if you follow our WhatsApp channel, to share news and offers there.</li>
       <li><b>Technical data:</b> to keep the website running, secure and fast.</li>
     </ul>
-    <p>We never sell your personal data, and we do not use it for advertising profiles.</p>
+    <p>We never sell your personal data. If you accept cookies, Meta may use your visit to show you our ads on Instagram and Facebook (see Cookies and tracking below).</p>
 
     <h2>Who else handles it</h2>
     <p>A few trusted services help us run the website and reply to you. They handle your data only to provide their service.</p>
@@ -1017,14 +1017,15 @@ h1,h2,h3,p{margin:0}
         <tr><td data-l="Service">Google Workspace</td><td data-l="What it does for us">Our email (contactus@63bylane.com)</td><td data-l="What it handles">Applications and emails you send</td></tr>
         <tr><td data-l="Service">WhatsApp (Meta) and Rannkly</td><td data-l="What it does for us">Our WhatsApp messaging</td><td data-l="What it handles">Your number and messages</td></tr>
         <tr><td data-l="Service">GitHub Pages (GitHub)</td><td data-l="What it does for us">Hosts the website</td><td data-l="What it handles">Technical data</td></tr>
-        <tr><td data-l="Service">Google Analytics (Google)</td><td data-l="What it does for us">Shows us how the website is used, only if you accept analytics cookies</td><td data-l="What it handles">Pages viewed, buttons tapped, device type and approximate location</td></tr>
+        <tr><td data-l="Service">Google Analytics (Google)</td><td data-l="What it does for us">Shows us how the website is used, only if you accept cookies</td><td data-l="What it handles">Pages viewed, buttons tapped, device type and approximate location</td></tr>
+        <tr><td data-l="Service">Meta Pixel (Meta)</td><td data-l="What it does for us">Measures our Instagram and Facebook ads and lets us show them to past visitors, only if you accept cookies</td><td data-l="What it handles">Pages viewed, buttons tapped, browser and device details</td></tr>
         <tr><td data-l="Service">Adobe Fonts and Google Fonts</td><td data-l="What it does for us">Load the website’s fonts</td><td data-l="What it handles">Your IP address and browser details</td></tr>
       </tbody></table></div>
     <p>Some of these services may store data outside India. We may also share data if the law requires it.</p>
 
     <h2>Cookies and tracking</h2>
-    <p>We use Google Analytics to understand how people use the website: which pages are viewed, where visitors come from, and how often buttons such as Order, WhatsApp and Call are tapped. It uses cookies, so it only runs if you choose <b>Accept</b> on the banner when you first visit. If you choose <b>No thanks</b>, nothing is tracked.</p>
-    <p>You can change your choice at any time with <button type="button" class="ck-open pv-link">Cookie settings</button>, also at the bottom of every page. We do not use advertising cookies, and the website sets no other cookies of its own.</p>
+    <p>We use Google Analytics to understand how people use the website: which pages are viewed, where visitors come from, and how often buttons such as Order, WhatsApp and Call are tapped. We also use the Meta Pixel, which tells Meta (Instagram and Facebook) that you visited, so we can measure our ads and show our offers to people who have been here before. Both use cookies, so they only run if you choose <b>Accept</b> on the banner when you first visit. If you choose <b>No thanks</b>, nothing is tracked.</p>
+    <p>You can change your choice at any time with <button type="button" class="ck-open pv-link">Cookie settings</button>, also at the bottom of every page. Our ordering site (order.63bylane.com, run by DotPe) uses the same Google Analytics and Meta Pixel. The website sets no other cookies of its own.</p>
     <p>Links to Instagram, Facebook, WhatsApp, Google Maps, Zomato, Swiggy and our ordering site take you to those services, which follow their own policies.</p>
 
     <h2>How long we keep it</h2>
@@ -1351,8 +1352,8 @@ const FILMS=[
 .ftr .b-links a{text-decoration:underline;text-underline-offset:3px}
 @media (max-width:760px){.ck{bottom:calc(78px + env(safe-area-inset-bottom,0px));grid-template-columns:1fr}.ck .ck-b .btn{flex:1;justify-content:center}}
 </style>
-<div class="ck" id="ck" role="dialog" aria-live="polite" aria-label="Analytics cookies" hidden>
-  <p><b>A quick question</b>May we use analytics cookies to see how visitors use our site, like which pages they view and when they tap Order? Nothing is sold or used for ads.</p>
+<div class="ck" id="ck" role="dialog" aria-live="polite" aria-label="Cookie choice" hidden>
+  <p><b>A quick question</b>May we use analytics and advertising cookies (Google and Meta) to see how visitors use our site, like which pages they view and when they tap Order, and to show our offers to people who have visited? We never sell your data.</p>
   <div class="ck-b"><button type="button" class="btn btn-ghost" id="ckNo">No thanks</button><button type="button" class="btn btn-navy" id="ckYes">Accept</button></div>
 </div>
 <script>
@@ -1361,17 +1362,22 @@ const FILMS=[
    While it is empty, no banner shows and nothing is tracked. */
 (function(){
   const GA_ID='G-W1NYTK0047';
-  const KEY='63bl-analytics';
+  const PIXEL_ID='1076518902514927'; /* Meta Pixel '63bylane Pixel' — loads only after Accept, same as Analytics */
+  const KEY='63bl-consent-v2'; /* v2 adds Meta advertising cookies, so earlier answers are asked again */
   const get=()=>{try{return localStorage.getItem(KEY)}catch(e){return null}};
   const set=v=>{try{localStorage.setItem(KEY,v)}catch(e){}};
   const ck=document.getElementById('ck');let loaded=false;
   function load(){if(loaded||!GA_ID)return;loaded=true;window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
     gtag('js',new Date());gtag('config',GA_ID,{anonymize_ip:true});
-    const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s)}
+    const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+    if(PIXEL_ID){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init',PIXEL_ID);fbq('track','PageView');if(document.documentElement.dataset.view==='menu')fbq('track','ViewContent',{content_name:'Menu'})}}
+  const FB={order_click:['trackCustom','OrderClick'],whatsapp_click:['track','Contact'],call_click:['track','Contact'],whatsapp_channel_click:['trackCustom','WhatsAppChannelClick'],application_submitted:['track','SubmitApplication'],franchise_enquiry:['track','Lead']};
+  function fb(ev,p){if(window.fbq&&FB[ev])fbq(FB[ev][0],FB[ev][1],p||{})}
   function show(){ck.hidden=false;requestAnimationFrame(()=>ck.classList.add('in'))}
   function hide(){ck.classList.remove('in');setTimeout(()=>ck.hidden=true,450)}
   document.getElementById('ckYes').onclick=()=>{set('yes');hide();load()};
-  document.getElementById('ckNo').onclick=()=>{set('no');hide();if(loaded){gtag('consent','update',{analytics_storage:'denied'})}};
+  document.getElementById('ckNo').onclick=()=>{set('no');hide();if(loaded){gtag('consent','update',{analytics_storage:'denied'});if(window.fbq)fbq('consent','revoke')}};
   document.querySelectorAll('.ck-open').forEach(b=>b.onclick=()=>{if(GA_ID)show()});
   if(GA_ID){const c=get();if(c==='yes')load();else if(c!=='no')setTimeout(show,1800)}
   /* what we count: taps on Order, WhatsApp, Call and the WhatsApp channel, plus where on the site they happened */
@@ -1380,8 +1386,8 @@ const FILMS=[
     for(const [s,n] of map)if(a.closest(s))return n;return 'other'}
   document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||!loaded)return;const u=a.getAttribute('href');let ev=null;
     if(/order\.63bylane\.com/.test(u))ev='order_click';else if(/whatsapp\.com\/channel/.test(u))ev='whatsapp_channel_click';else if(/wa\.me/.test(u))ev='whatsapp_click';else if(/^tel:/.test(u))ev='call_click';
-    if(ev)gtag('event',ev,{link_location:where(a)})},true);
-  window.__track=(ev,p)=>{if(loaded)gtag('event',ev,p||{})};
+    if(ev){gtag('event',ev,{link_location:where(a)});fb(ev,{link_location:where(a)})}},true);
+  window.__track=(ev,p)=>{if(loaded){gtag('event',ev,p||{});fb(ev,p)}};
 })();
 </script>
 </body>
