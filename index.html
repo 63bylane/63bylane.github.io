@@ -1006,7 +1006,7 @@ h1,h2,h3,p{margin:0}
       <li><b>WhatsApp, calls and email:</b> to reply to you, help with an order or feedback, and, if you follow our WhatsApp channel, to share news and offers there.</li>
       <li><b>Technical data:</b> to keep the website running, secure and fast.</li>
     </ul>
-    <p>We never sell your personal data. If you accept cookies, Meta may use your visit to show you our ads on Instagram and Facebook (see Cookies and tracking below).</p>
+    <p>We never sell your personal data. Meta may use your visit to show you our ads on Instagram and Facebook, unless you turn cookies off (see Cookies and tracking below).</p>
 
     <h2>Who else handles it</h2>
     <p>A few trusted services help us run the website and reply to you. They handle your data only to provide their service.</p>
@@ -1017,15 +1017,15 @@ h1,h2,h3,p{margin:0}
         <tr><td data-l="Service">Google Workspace</td><td data-l="What it does for us">Our email (contactus@63bylane.com)</td><td data-l="What it handles">Applications and emails you send</td></tr>
         <tr><td data-l="Service">WhatsApp (Meta) and Rannkly</td><td data-l="What it does for us">Our WhatsApp messaging</td><td data-l="What it handles">Your number and messages</td></tr>
         <tr><td data-l="Service">GitHub Pages (GitHub)</td><td data-l="What it does for us">Hosts the website</td><td data-l="What it handles">Technical data</td></tr>
-        <tr><td data-l="Service">Google Analytics (Google)</td><td data-l="What it does for us">Shows us how the website is used, only if you accept cookies</td><td data-l="What it handles">Pages viewed, buttons tapped, device type and approximate location</td></tr>
-        <tr><td data-l="Service">Meta Pixel (Meta)</td><td data-l="What it does for us">Measures our Instagram and Facebook ads and lets us show them to past visitors, only if you accept cookies</td><td data-l="What it handles">Pages viewed, buttons tapped, browser and device details</td></tr>
+        <tr><td data-l="Service">Google Analytics (Google)</td><td data-l="What it does for us">Shows us how the website is used, unless you turn cookies off</td><td data-l="What it handles">Pages viewed, buttons tapped, device type and approximate location</td></tr>
+        <tr><td data-l="Service">Meta Pixel (Meta)</td><td data-l="What it does for us">Measures our Instagram and Facebook ads and lets us show them to past visitors, unless you turn cookies off</td><td data-l="What it handles">Pages viewed, buttons tapped, browser and device details</td></tr>
         <tr><td data-l="Service">Adobe Fonts and Google Fonts</td><td data-l="What it does for us">Load the website’s fonts</td><td data-l="What it handles">Your IP address and browser details</td></tr>
       </tbody></table></div>
     <p>Some of these services may store data outside India. We may also share data if the law requires it.</p>
 
     <h2>Cookies and tracking</h2>
-    <p>We use Google Analytics to understand how people use the website: which pages are viewed, where visitors come from, and how often buttons such as Order, WhatsApp and Call are tapped. We also use the Meta Pixel, which tells Meta (Instagram and Facebook) that you visited, so we can measure our ads and show our offers to people who have been here before. Both use cookies, so they only run if you choose <b>Accept</b> on the banner when you first visit. If you choose <b>No thanks</b>, nothing is tracked.</p>
-    <p>You can change your choice at any time with <button type="button" class="ck-open pv-link">Cookie settings</button>, also at the bottom of every page. Our ordering site (order.63bylane.com, run by DotPe) uses the same Google Analytics and Meta Pixel. The website sets no other cookies of its own.</p>
+    <p>We use Google Analytics to understand how people use the website: which pages are viewed, where visitors come from, and how often buttons such as Order, WhatsApp and Call are tapped. We also use the Meta Pixel, which tells Meta (Instagram and Facebook) that you visited, so we can measure our ads and show our offers to people who have been here before. Both use cookies and run when you visit the website.</p>
+    <p>You can turn them off at any time with <button type="button" class="ck-open pv-link">Cookie settings</button>, also at the bottom of every page. Choose <b>Turn off</b> and nothing more is tracked on this device; you can switch them back on the same way. Our ordering site (order.63bylane.com, run by DotPe) uses the same Google Analytics and Meta Pixel. The website sets no other cookies of its own.</p>
     <p>Links to Instagram, Facebook, WhatsApp, Google Maps, Zomato, Swiggy and our ordering site take you to those services, which follow their own policies.</p>
 
     <h2>How long we keep it</h2>
@@ -1341,7 +1341,7 @@ const FILMS=[
 /* ---------- analytics consent ---------- */
 .ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;margin:0 auto;max-width:560px;background:var(--ivory);color:var(--ink);border-radius:10px;box-shadow:0 18px 50px rgba(0,30,60,.28);padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:12px 18px;align-items:center;transform:translateY(20px);opacity:0;transition:transform .45s var(--ease),opacity .45s}
 .ck.in{transform:none;opacity:1}
-.ck p{font:400 14px/1.5 var(--serif);margin:0}
+.ck p{font:400 14px/1.5 var(--serif);margin:0}.ck p a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .ck p b{font:700 13px/1.4 var(--g);color:var(--blue);display:block;margin-bottom:2px}
 .ck .ck-b{display:flex;gap:8px}
 .ck .btn{padding:12px 16px;font-size:10.5px}
@@ -1353,8 +1353,8 @@ const FILMS=[
 @media (max-width:760px){.ck{bottom:calc(78px + env(safe-area-inset-bottom,0px));grid-template-columns:1fr}.ck .ck-b .btn{flex:1;justify-content:center}}
 </style>
 <div class="ck" id="ck" role="dialog" aria-live="polite" aria-label="Cookie choice" hidden>
-  <p><b>A quick question</b>May we use analytics and advertising cookies (Google and Meta) to see how visitors use our site, like which pages they view and when they tap Order, and to show our offers to people who have visited? We never sell your data.</p>
-  <div class="ck-b"><button type="button" class="btn btn-ghost" id="ckNo">No thanks</button><button type="button" class="btn btn-navy" id="ckYes">Accept</button></div>
+  <p><b>Cookie settings</b>We use Google and Meta cookies to understand visits and improve our offers. <a href="/privacy/">Privacy policy</a></p>
+  <div class="ck-b"><button type="button" class="btn btn-ghost" id="ckNo">Turn off</button><button type="button" class="btn btn-navy" id="ckYes">Keep on</button></div>
 </div>
 <script>
 /* ---------- Google Analytics 4: loads only after the visitor accepts ----------
@@ -1379,7 +1379,8 @@ const FILMS=[
   document.getElementById('ckYes').onclick=()=>{set('yes');hide();load()};
   document.getElementById('ckNo').onclick=()=>{set('no');hide();if(loaded){gtag('consent','update',{analytics_storage:'denied'});if(window.fbq)fbq('consent','revoke')}};
   document.querySelectorAll('.ck-open').forEach(b=>b.onclick=()=>{if(GA_ID)show()});
-  if(GA_ID){const c=get();if(c==='yes')load();else if(c!=='no')setTimeout(show,1800)}
+  /* tracking runs for everyone unless the visitor turns it off in Cookie settings (footer); no banner on arrival */
+  if(GA_ID&&get()!=='no')load();
   /* what we count: taps on Order, WhatsApp, Call and the WhatsApp channel, plus where on the site they happened */
   function where(a){const card=a.closest('.card');if(card){const b=card.querySelector('b');return 'menu: '+(b?b.textContent.trim():'item')}
     const map=[['.hdr','header'],['.stage','opening'],['.abar','mobile bar'],['.end','the usual'],['.travel','made to travel'],['.d63','paneer tikka'],['.revs','reviews'],['.lk','connect page'],['#cview','careers page'],['#pview','privacy page'],['#fview','franchise page'],['#sview','our story'],['#mview','menu page'],['.ftr','footer'],['.fav','favourites']];
