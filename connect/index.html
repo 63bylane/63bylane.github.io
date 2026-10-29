@@ -637,209 +637,13 @@ h1,h2,h3,p{margin:0}
 </header>
 
 <main id="top">
-<div class="home">
-
-<!-- 1 · stage: one dish in the centre, its category word behind, neighbours half visible -->
-<p class="vh">63 BYLANE: Italian-inspired pizza and pasta, 100% vegetarian, Kandivali East, Mumbai</p>
-<section class="stage" id="stage" aria-roledescription="carousel" aria-label="What we make">
-  <span class="kick st-kick">The neighbourhood’s Italian · 100% vegetarian</span>
-  <div class="st-words" aria-hidden="true" id="stWords"></div>
-  <div class="st-track" id="stTrack"></div>
-  <div class="st-info">
-    <p class="st-note" id="stNote"></p>
-    <div class="st-cta"><a class="btn st-order" href="https://order.63bylane.com" target="_blank" rel="noopener">Order direct <svg><use href="#arr"/></svg></a><a class="btn btn-ghost st-more" id="stMore" href="/menu/">See all</a></div>
-  </div>
-  <div class="st-ui">
-    <nav class="st-tabs" id="stTabs" aria-label="Choose a category"></nav>
-    <div class="arrows"><button class="arr" id="stPause" aria-label="Pause slideshow" aria-pressed="false"><svg><use href="#pause"/></svg></button><button class="arr" id="stPrev" aria-label="Previous"><svg><use href="#l"/></svg></button><button class="arr" id="stNext" aria-label="Next"><svg><use href="#arr"/></svg></button></div>
-  </div>
-</section>
-
-<!-- 2 · quiet facts -->
-<!-- 3 · favourites (the full menu lives on its own page) -->
-<section class="fav" aria-labelledby="fh">
-  <div class="wrap">
-    <div class="fav-head">
-      <div><span class="kick" style="color:var(--orange)">Favourites</span><h2 class="h2" id="fh">Made, not assembled<span class="dot">.</span></h2></div>
-      <a class="btn btn-navy" href="/menu/">See the full menu <svg><use href="#arr"/></svg></a>
-    </div>
-    <div class="fgrid" id="fgrid"></div>
-  </div>
-</section>
-</div>
+<div class="home"></div>
 
 <!-- full menu view -->
-<section class="menu" id="mview" aria-labelledby="mh" hidden>
-  <div class="wrap">
-    <a class="mback" href="/"><svg><use href="#l"/></svg>Home</a>
-    <div class="m-head">
-      <div style="display:grid;gap:14px"><span class="kick" style="color:var(--orange)">Pizza · Pasta</span><h2 class="black" id="mh">The menu<span class="dot">.</span></h2></div>
-      <p>100% vegetarian, with Jain and vegan choices when you order. Tap any dish to open our ordering menu, then choose your location and dish.</p>
-    </div>
-    <nav class="cats" id="cats" aria-label="Menu categories"></nav>
-    <div id="cbody"></div>
-    <div class="m-foot">
-      <p><span class="ic" style="--i:url(/assets/ic-chilli.png)"></span> Spicy &nbsp;·&nbsp; <span class="ic" style="--i:url(/assets/ic-chef.png)"></span> Chef’s pick &nbsp;·&nbsp; Prices in ₹</p>
-      <a class="btn btn-navy" href="https://order.63bylane.com" target="_blank" rel="noopener">Order direct <svg><use href="#arr"/></svg></a>
-    </div>
-  </div>
-</section>
-<div class="home">
-
-<!-- 4 · craft -->
-<section class="craft on-navy" id="craft" aria-labelledby="ch">
-  <div class="wrap">
-    <div>
-      <span class="kick" style="color:var(--orange)">Before the first bite</span>
-      <h2 class="black" id="ch" style="margin-top:18px">48<br>hours<span class="dot">.</span><span class="sm">That’s how long every pizza dough ferments before it’s stretched by hand.</span></h2>
-      <a class="btn btn-ghost" href="/our-story/" style="margin-top:28px">See how we make it <svg><use href="#arr"/></svg></a>
-    </div>
-    <div class="ph"><video poster="/assets/dough.jpg" muted loop playsinline preload="none" data-auto="dough" aria-label="Pizza dough being mixed, weighed and shaped in our kitchen"></video><span class="tag">From our kitchen</span><p class="cap" id="cap" aria-live="off">Flour and water.</p></div>
-  </div>
-</section>
-
-<!-- 5 · distinctly 63 -->
-<section class="d63" aria-labelledby="dh">
-  <div class="wrap">
-    <div><img class="pz" id="spin" src="/assets/x-paneer.webp" alt="Paneer Tikka pizza on a wooden board" width="1100" height="619" loading="lazy"></div>
-    <div class="body">
-      <span class="kick" style="color:var(--orange)">Distinctly 63</span>
-      <h2 class="h2" id="dh">Italy inspires it.<br>63 makes it<span class="dot">.</span></h2>
-      <p class="lede">An Italian pizza process, 48-hour dough and house-made sauce, with paneer marinated in-house in our own tikka masala. We respect the foundation, then make it ours.</p>
-      <div class="dish"><b>Paneer Tikka</b></div>
-      <div><a class="btn btn-navy" href="https://order.63bylane.com" target="_blank" rel="noopener">Order online <svg><use href="#arr"/></svg></a></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6 · reels -->
-<section class="reels on-navy" aria-labelledby="rh">
-  <div class="wrap">
-    <div class="reels-head"><div style="display:grid;gap:14px"><span class="kick" style="color:var(--orange)">Kitchen notes</span><h2 class="h2" id="rh">A little flour<span class="dot">.</span><br>A lot of care<span class="dot">.</span></h2></div><a class="btn btn-ghost" href="https://www.instagram.com/63bylane/" target="_blank" rel="noopener">Follow @63bylane <svg><use href="#arr"/></svg></a></div>
-    <div class="rrow" id="rrow"></div>
-  </div>
-</section>
-
-<!-- 6b · reviews -->
-<section class="revs" aria-labelledby="rvh">
-  <div class="wrap">
-    <div class="revs-head">
-      <div><span class="kick" style="color:var(--orange)">In their words</span><h2 class="h2" id="rvh">Ten years of regulars<span class="dot">.</span></h2></div>
-      <a class="btn btn-ghost" href="https://share.google/vmwtM6RNB0C2emfL7" target="_blank" rel="noopener" style="color:var(--blue)">Read all on Google <svg><use href="#arr"/></svg></a>
-    </div>
-    <div class="rv-row"><figure class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“…I’ve been ordering food pretty much since when they started years ago. Delicious all vegetarian Italian dishes whose quality they have maintained well, which is no small feat. Very glad to have it in the neighborhood, we order from here almost every week.”</blockquote><figcaption><b>Hasmita C.</b><span>Google review</span></figcaption></figure><figure class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“I would kill for their Aglio Olio!!! … I tried having this dish from one of the best Italian restaurants in Mumbai but nothing matches to the taste you guys provide.”</blockquote><figcaption><b>Shraddha M.</b><span>Google review</span></figcaption></figure><figure class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“…decided to try their truffle pizza — and honestly, I was blown away! The taste and quality are on a completely different level from your average pizza place.”</blockquote><figcaption><b>Prathamesh M.</b><span>Google review</span></figcaption></figure><figure class="rv rv-more" hidden><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“They have the best tasting vegan pizzas. And their salads are worth craving for. Loaded with healthy veggies and delicious dressing.”</blockquote><figcaption><b>Nikita P.</b><span>Google review</span></figcaption></figure><figure class="rv rv-more" hidden><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“Being a Jain, we order often from here and we have never been disappointed. This time we placed a bulk order for 40 pizzas and 60 pastas, for a gathering and it was as good.”</blockquote><figcaption><b>Princy J.</b><span>Google review</span></figcaption></figure><figure class="rv rv-more" hidden><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>“Yasin, from this place has helped me throughout on my order on WhatsApp keeping my specification’s in mind… I asked them to mention Happy Anniversary if possible and they even did that… but 63 by lane could still make them feel so special.”</blockquote><figcaption><b>Rii K.</b><span>Google review</span></figcaption></figure></div>
-    <button class="btn btn-ghost rv-btn" id="rvMore" aria-expanded="false" style="color:var(--blue)">More reviews</button>
-    <div class="rv-promise">
-      <div><b>Something we could do better? Tell us.</b><p>We’ll make it right, and fix what caused it so it doesn’t happen again.</p></div>
-      <div class="rv-cta"><a class="btn btn-navy" href="https://wa.me/917710063463?text=Hi%2063%20BYLANE%2C%20I%27d%20like%20to%20share%20some%20feedback." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp us</a><a class="btn btn-ghost" href="mailto:contactus@63bylane.com?subject=Feedback%20for%2063%20BYLANE" style="color:var(--blue)">Write to us</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- 7 · travel -->
-<section class="travel" aria-labelledby="th">
-  <div class="wrap">
-    <div class="img"><img src="/assets/x-box.webp" alt="The navy 63 BYLANE pizza box with the orange door" width="1345" height="951" loading="lazy"></div>
-    <div class="stack">
-      <span class="kick">At home</span>
-      <h2 class="h2" id="th">Made to travel well<span class="dot">.</span></h2>
-      <p style="font:400 17px/1.65 var(--serif)">From our kitchen to your door, packed to travel well. Order direct to get our offers.</p>
-      <div class="care"><b>A little warmth goes a long way.</b><span>For the best flavour and texture, reheat your pizza if needed in a skillet, OTG or your microwave’s bake mode.</span></div>
-      <div><a class="btn btn-navy" href="https://order.63bylane.com" target="_blank" rel="noopener">Order for delivery <svg><use href="#arr"/></svg></a></div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="end" aria-label="Order">
-  <div class="wrap">
-    <h2 class="black">The usual<span class="dot">?</span></h2>
-    <p class="end-sub">Some favourites are worth coming back to.</p>
-    <a class="btn btn-navy" href="https://order.63bylane.com" target="_blank" rel="noopener" style="margin-top:8px">Order direct <svg><use href="#arr"/></svg></a>
-    <div class="end-art"><img class="eu" src="/assets/x-usual.webp" alt="Pesto pizza, creamy mushroom spaghetti and a focaccia sandwich" width="1300" height="817" loading="lazy"></div>
-  </div>
-</section>
-</div>
+<section class="menu" id="mview" aria-labelledby="mh" hidden></section>
+<div class="home"></div>
 <!-- our story view -->
-<article class="story" id="sview" aria-labelledby="sh" hidden>
-  <section class="s-open on-navy">
-    <div class="s-head">
-      <a class="mback" href="/" style="color:var(--ivory)"><svg><use href="#l"/></svg>Home</a>
-      <span class="kick" style="color:var(--orange)">Our story</span>
-      <h1 class="black" id="sh">It started<br>with 63<span class="dot">.</span></h1>
-      <p class="s-place">The number of our first shop. Kandivali, July 2016.</p>
-    </div>
-    <div class="s-art"><img class="s-door" src="/assets/doorway.webp" alt="The BYLANE doorway: stonework, a lantern, an olive tree and a single orange door" width="856" height="2105"></div>
-    <div class="s-body">
-      <p class="s-first">BYLANE comes from the hidden streets of Italy, where small neighbourhood places become known for what they make: simple ingredients, thoughtful craftsmanship and a love for good food that keep people coming back.</p>
-      <p>Since 2016, we’ve brought that spirit to our neighbourhood: 48-hour fermented dough, house-made sauces, handmade ravioli and carefully chosen ingredients, in flavour-forward vegetarian food made our own way.</p>
-      <p>We aren’t trying to recreate Italy. We’re building our own expression of it.</p>
-      <p>From pizza and pasta to everything around them, our philosophy is simple:</p>
-      <p class="s-phil">Make it fresh. Make it well.<br>Make it worth craving<span class="dot">.</span></p>
-    </div>
-  </section>
-
-  <section class="s-values">
-    <div class="wrap s-rep">
-      <div class="s-rh"><span class="kick" style="color:var(--orange)">Why people come back</span>
-      <h2 class="h2">A small street with a big reputation<span class="dot">.</span></h2></div>
-      <div class="s-rt">
-        <p>A neighbourhood place earns its reputation one order at a time, by making the hundredth order as carefully as the first.</p>
-        <p class="s-rl">And when someone comes back for their usual, it means we’ve given them something worth returning to.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-ch on-navy">
-    <div class="wrap">
-      <span class="kick" style="color:var(--orange)">The journey</span>
-      <h2 class="h2">Ten years. Three chapters<span class="dot">.</span></h2>
-      <ol class="s-chs">
-        <li><i>I</i><span class="kick">2016</span><b>We started at the table.</b><p>July 2016. Shop no. 63 in Kandivali: a small neighbourhood restaurant.</p></li>
-        <li><i>II</i><span class="kick">2020</span><b>We kept cooking.</b><p>When dining rooms closed in 2020, delivery became how the neighbourhood experienced us.</p></li>
-        <li><i>III</i><span class="kick">Next</span><b>We’re coming back to the table.</b><p>A new kind of 63: small, casual neighbourhood places for dine-in, pickup and delivery.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="s-tn">
-    <div class="wrap">
-      <div class="s-tnh"><span class="kick" style="color:var(--orange)">Then &amp; now</span><h2 class="h2">The walls said it then.<br>The food says it now<span class="dot">.</span></h2>
-      <p class="lede">Fresh dough, our own bread, sauces made fresh, only vegetarian. The promises haven’t changed in a decade. The look has.</p></div>
-      <div class="s-tng">
-        <figure><img src="/assets/story-then.webp" alt="The original shop no. 63 in Kandivali" width="1200" height="900" loading="lazy"><figcaption>Then · Shop no. 63, Kandivali</figcaption></figure>
-        <figure><img src="/assets/story-now.webp" alt="Concept for the upcoming 63 BYLANE storefront with its orange door" width="1200" height="800" loading="lazy"><figcaption>Next · Our new storefront, coming soon</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-kit on-navy">
-    <div class="wrap">
-      <div class="s-kh"><span class="kick" style="color:var(--orange)">In our kitchen</span><h2 class="h2">Made properly,<br>by people who care<span class="dot">.</span></h2></div>
-      <div class="s-kg">
-        <figure><div class="ph"><video poster="/assets/dough.jpg" muted loop playsinline preload="none" data-auto="dough" aria-label="Pizza dough being mixed, weighed and shaped"></video></div><figcaption><b>48-hour dough</b><span>Every pizza base rests for two days, then is stretched to order.</span></figcaption></figure>
-        <figure><div class="ph"><video poster="/assets/ravioli.jpg" muted loop playsinline preload="none" data-auto="ravioli" aria-label="Ravioli being rolled, filled and sealed by hand"></video></div><figcaption><b>Ravioli, by hand</b><span>Rolled, filled and sealed by our team.</span></figcaption></figure>
-      </div>
-      <div class="proof" style="margin-top:clamp(36px,5vw,64px)">
-        <div><b>In-house</b><span>Sauces, made from Italian tomatoes in our own kitchen</span></div>
-        <div><b>By hand</b><span>Ravioli made by our team, every pizza stretched to order</span></div>
-        <div><b>Our own</b><span>Focaccia, baked by us for every sandwich</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-founder">
-    <div class="wrap">
-      <span class="kick" style="color:var(--orange)">The founder</span>
-      <h2 class="h2">A brand that grew with its founder<span class="dot">.</span></h2>
-      <p class="lede">Abhishek left a career in banking to start 63 BYLANE in 2016, with a simple passion: to serve good Italian-inspired food in his own neighbourhood.</p>
-      <p class="lede">That passion grew into the craft itself: understanding ingredients and processes, developing recipes and refining the food. Ten years on, he still shapes every chapter.</p>
-      <p class="s-sign"><b>Abhishek</b><span>Founder, 63 BYLANE</span></p>
-    </div>
-  </section>
-
-</article>
+<article class="story" id="sview" aria-labelledby="sh" hidden></article>
 <!-- explore / links view -->
 <section class="lk" id="lview" aria-labelledby="lkh" hidden>
   <div class="cr-head lk-head on-navy">
@@ -901,167 +705,9 @@ h1,h2,h3,p{margin:0}
 </section>
 
 <!-- careers view -->
-<section class="cr" id="cview" aria-labelledby="crh" hidden>
-  <div class="cr-head on-navy">
-    <div class="wrap">
-      <a class="mback" href="/" style="color:var(--ivory)"><svg><use href="#l"/></svg>Home</a>
-      <span class="kick" style="color:var(--orange)">Careers</span>
-      <h1 class="h2" id="crh" style="font-size:clamp(40px,5.2vw,76px)">Made properly,<br>by people who care<span class="dot">.</span></h1>
-      <p class="lede">We’re a neighbourhood kitchen in Kandivali that has been making pizza, pasta and focaccia from scratch since 2016. If you like doing things properly, we’d like to meet you.</p>
-    </div>
-  </div>
-  <div class="wrap cr-body">
-    <div class="cr-roles">
-      <h2 class="kick" style="color:var(--orange)">Roles we hire for</h2>
-      <div class="cr-role"><b>Kitchen team</b><p>Pizza, pasta and prep. Experience helps, but care matters more.</p></div>
-      <div class="cr-role"><b>Delivery riders</b><p>Getting every order to the door the way it left our kitchen.</p></div>
-      <div class="cr-role"><b>Store &amp; service team</b><p>For our next chapter, as we come back to the table.</p></div>
-      <p class="cr-note">Don’t see your role? Apply anyway and tell us what you’d bring.</p>
-      <a class="btn btn-ghost" href="https://wa.me/917710063463?text=Hi%2063%20BYLANE%2C%20I%27d%20like%20to%20apply%20for%20a%20job." target="_blank" rel="noopener" style="color:var(--blue)"><svg><use href="#chat"/></svg>Apply on WhatsApp</a>
-    </div>
-    <form class="cr-form" id="crForm" novalidate>
-      <h2 class="h2" style="font-size:clamp(26px,2.4vw,34px)">Apply<span class="dot">.</span></h2>
-      <label>Full name<input name="name" required autocomplete="name"></label>
-      <div class="cr-2"><label>Phone<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
-      <label>Email<input name="email" type="email" autocomplete="email"></label></div>
-      <div class="cr-2"><label>Role<select name="role" required><option value="">Choose a role</option><option>Kitchen team</option><option>Delivery rider</option><option>Store &amp; service team</option><option>Other</option></select></label>
-      <label>Experience<select name="experience"><option>Fresher</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select></label></div>
-      <label>Area you live in<input name="area" placeholder="e.g. Kandivali East"></label>
-      <label>CV or LinkedIn link <em>(optional)</em><input name="cv" type="url" placeholder="Google Drive, LinkedIn or any link"></label>
-      <label>Anything you’d like us to know <em>(optional)</em><textarea name="message" rows="4"></textarea></label>
-      <input type="checkbox" name="botcheck" class="vh" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <p class="cr-err" id="crErr" hidden>Please add your name, phone number and the role you’re applying for.</p>
-      <button class="btn btn-navy" type="submit">Send application <svg><use href="#arr"/></svg></button>
-      <p class="cr-small">Your details are sent to our team at contactus@63bylane.com and used only for hiring. <a href="/privacy/">Privacy policy</a></p>
-      <div class="cr-done" id="crFail" hidden><b>Almost there<span class="dot">.</span></b><p>We couldn’t send it from here. Tap below to send the same details by WhatsApp or email.</p><div class="rv-cta" style="justify-content:center"><a class="btn btn-navy cf-wa" target="_blank" rel="noopener">WhatsApp us</a><a class="btn btn-ghost cf-mail">Email us</a></div><button type="button" class="cf-back" style="margin-top:6px;border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font:400 14px/1.4 var(--serif)">Back to the form</button></div>
-      <div class="cr-done" id="crDone" hidden><b>Thank you<span class="dot">.</span></b><p>We’ve got your details and will get in touch if there’s a fit.</p></div>
-    </form>
-  </div>
-</section>
-<section class="cr" id="fview" aria-labelledby="frh" hidden>
-  <div class="cr-head on-navy">
-    <div class="wrap">
-      <a class="mback" href="/connect/" style="color:var(--ivory)"><svg><use href="#l"/></svg>Connect with us</a>
-      <span class="kick" style="color:var(--orange)">Franchise</span>
-      <h1 class="h2" id="frh" style="font-size:clamp(40px,5.2vw,76px)">Bring 63 BYLANE<br>to your neighbourhood<span class="dot">.</span></h1>
-      <p class="lede">Interested in opening a 63 BYLANE? Tell us a little about yourself and where you’d like to open, and we’ll get back to you.</p>
-    </div>
-  </div>
-  <div class="wrap cr-body">
-    <div class="cr-roles">
-      <h2 class="kick" style="color:var(--orange)">Other ways to reach us</h2>
-      <div class="cr-role"><b>WhatsApp</b><p>The quickest way to start a conversation. Your message is typed in for you.</p></div>
-      <a class="btn btn-navy" href="https://wa.me/917710063463?text=Hi%2063%20BYLANE%2C%20I%E2%80%99m%20interested%20in%20a%20franchise." target="_blank" rel="noopener" style="margin:6px 0 22px"><svg><use href="#chat"/></svg>Message us on WhatsApp</a>
-      <div class="cr-role"><b>Email</b><p><a href="mailto:contactus@63bylane.com?subject=Franchise%20enquiry" style="color:var(--blue)">contactus@63bylane.com</a></p></div>
-    </div>
-    <form class="cr-form" id="frForm" novalidate>
-      <h2 class="h2" style="font-size:clamp(26px,2.4vw,34px)">Enquire<span class="dot">.</span></h2>
-      <label>Full name<input name="name" required autocomplete="name"></label>
-      <div class="cr-2"><label>Phone<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
-      <label>Email <em>(optional)</em><input name="email" type="email" autocomplete="email"></label></div>
-      <label>City or area you’re interested in<input name="city" required placeholder="e.g. Pune, Thane, Borivali"></label>
-      <label>Tell us about yourself <em>(optional)</em><textarea name="message" rows="4" placeholder="Your background, and any location you already have in mind"></textarea></label>
-      <input type="checkbox" name="botcheck" class="vh" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <p class="cr-err" id="frErr" hidden>Please add your name, phone number and the city you’re interested in.</p>
-      <button class="btn btn-navy" type="submit">Send enquiry <svg><use href="#arr"/></svg></button>
-      <p class="cr-small">Your details are sent to our team at contactus@63bylane.com and used only to reply to your enquiry. <a href="/privacy/">Privacy policy</a></p>
-      <div class="cr-done" id="frFail" hidden><b>Almost there<span class="dot">.</span></b><p>We couldn’t send it from here. Tap below to send the same details by WhatsApp or email.</p><div class="rv-cta" style="justify-content:center"><a class="btn btn-navy cf-wa" target="_blank" rel="noopener">WhatsApp us</a><a class="btn btn-ghost cf-mail">Email us</a></div><button type="button" class="cf-back" style="margin-top:6px;border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font:400 14px/1.4 var(--serif)">Back to the form</button></div>
-      <div class="cr-done" id="frDone" hidden><b>Thank you<span class="dot">.</span></b><p>We’ve got your enquiry and will get back to you soon.</p></div>
-    </form>
-  </div>
-</section>
-<section class="pv" id="pview" aria-labelledby="pvh" hidden>
-  <div class="cr-head on-navy">
-    <div class="wrap">
-      <a class="mback" href="/" style="color:var(--ivory)"><svg><use href="#l"/></svg>Home</a>
-      <span class="kick" style="color:var(--orange)">Privacy policy</span>
-      <h1 class="h2" id="pvh">Your data, kept simple<span class="dot">.</span></h1>
-      <p class="lede">This website collects very little: only what you choose to send us, such as a job application or a WhatsApp message.</p>
-      <p class="pv-date">Last updated: 26 October 2026</p>
-    </div>
-  </div>
-  <div class="wrap pv-body">
-    <h2>Who we are</h2>
-    <p>63 BYLANE is a vegetarian pizza and pasta kitchen at Emp 56, Shop No. 63, Thakur Village, Kandivali East, Mumbai 400101. The business is run by <b>Kloves Cuisines Private Limited</b>, which decides how the personal data described here is used.</p>
-    <p>This policy covers www.63bylane.com. Orders are placed on order.63bylane.com, Zomato or Swiggy, and each of those has its own privacy policy.</p>
-
-    <h2>What we collect</h2>
-    <p>We only collect what you choose to send us. You can browse the whole website without giving us anything.</p>
-    <div class="pv-t"><table>
-      <thead><tr><th>When you</th><th>What we receive</th></tr></thead>
-      <tbody>
-        <tr><td data-l="When you">Apply through the careers form</td><td data-l="What we receive">Your name, phone number, and anything else you choose to add: email, role, experience, the area you live in, a CV or LinkedIn link, and a message</td></tr>
-        <tr><td data-l="When you">Send a franchise enquiry</td><td data-l="What we receive">Your name, phone number, the city you’re interested in, and anything else you choose to add: email and a message</td></tr>
-        <tr><td data-l="When you">Message or call us on WhatsApp or phone</td><td data-l="What we receive">Your phone number, your WhatsApp name and the messages you send</td></tr>
-        <tr><td data-l="When you">Email us</td><td data-l="What we receive">Your email address and what you write</td></tr>
-        <tr><td data-l="When you">Visit any page</td><td data-l="What we receive">Basic technical data every website receives: your IP address, browser and device type, and the pages requested. We do not use this to identify you</td></tr>
-      </tbody></table></div>
-
-    <h2>How we use it</h2>
-    <p>We use your details only for the reason you sent them:</p>
-    <ul>
-      <li><b>Job applications:</b> to review your application and contact you about a role.</li>
-      <li><b>Franchise enquiries:</b> to reply to you and discuss a possible franchise.</li>
-      <li><b>WhatsApp, calls and email:</b> to reply to you, help with an order or feedback, and, if you follow our WhatsApp channel, to share news and offers there.</li>
-      <li><b>Technical data:</b> to keep the website running, secure and fast.</li>
-    </ul>
-    <p>We never sell your personal data. Meta may use your visit to show you our ads on Instagram and Facebook, unless you turn cookies off (see Cookies and tracking below).</p>
-
-    <h2>Who else handles it</h2>
-    <p>A few trusted services help us run the website and reply to you. They handle your data only to provide their service.</p>
-    <div class="pv-t"><table>
-      <thead><tr><th>Service</th><th>What it does for us</th><th>What it handles</th></tr></thead>
-      <tbody>
-        <tr><td data-l="Service">Web3Forms</td><td data-l="What it does for us">Delivers careers and franchise forms to our inbox</td><td data-l="What it handles">Everything in the form</td></tr>
-        <tr><td data-l="Service">Google Workspace</td><td data-l="What it does for us">Our email (contactus@63bylane.com)</td><td data-l="What it handles">Applications and emails you send</td></tr>
-        <tr><td data-l="Service">WhatsApp (Meta) and Rannkly</td><td data-l="What it does for us">Our WhatsApp messaging</td><td data-l="What it handles">Your number and messages</td></tr>
-        <tr><td data-l="Service">GitHub Pages (GitHub)</td><td data-l="What it does for us">Hosts the website</td><td data-l="What it handles">Technical data</td></tr>
-        <tr><td data-l="Service">Google Analytics (Google)</td><td data-l="What it does for us">Shows us how the website is used, unless you turn cookies off</td><td data-l="What it handles">Pages viewed, buttons tapped, device type and approximate location</td></tr>
-        <tr><td data-l="Service">Meta Pixel (Meta)</td><td data-l="What it does for us">Measures our Instagram and Facebook ads and lets us show them to past visitors, unless you turn cookies off</td><td data-l="What it handles">Pages viewed, buttons tapped, browser and device details</td></tr>
-        <tr><td data-l="Service">Adobe Fonts and Google Fonts</td><td data-l="What it does for us">Load the website’s fonts</td><td data-l="What it handles">Your IP address and browser details</td></tr>
-      </tbody></table></div>
-    <p>Some of these services may store data outside India. We may also share data if the law requires it.</p>
-
-    <h2>Cookies and tracking</h2>
-    <p>We use Google Analytics to understand how people use the website: which pages are viewed, where visitors come from, and how often buttons such as Order, WhatsApp and Call are tapped. We also use the Meta Pixel, which tells Meta (Instagram and Facebook) that you visited, so we can measure our ads and show our offers to people who have been here before. Both use cookies and run when you visit the website.</p>
-    <p>You can turn them off at any time with <button type="button" class="ck-open pv-link">Cookie settings</button>, also at the bottom of every page. Choose <b>Turn off</b> and nothing more is tracked on this device; you can switch them back on the same way. Our ordering site (order.63bylane.com, run by DotPe) uses the same Google Analytics and Meta Pixel. The website sets no other cookies of its own.</p>
-    <p>Links to Instagram, Facebook, WhatsApp, Google Maps, Zomato, Swiggy and our ordering site take you to those services, which follow their own policies.</p>
-
-    <h2>How long we keep it</h2>
-    <ul>
-      <li><b>Job applications:</b> up to 12 months, so we can contact you if a suitable role opens. Ask us and we will delete yours sooner.</li>
-      <li><b>Messages and emails:</b> as long as needed to help you, and then only as long as our records reasonably require.</li>
-      <li><b>Technical data:</b> kept briefly by our hosting provider for security, and not used to identify you.</li>
-    </ul>
-
-    <h2>Your rights</h2>
-    <p>Under India’s Digital Personal Data Protection Act, 2023, you can ask us to:</p>
-    <ul>
-      <li>tell you what personal data of yours we hold and how we use it</li>
-      <li>correct, complete or update it</li>
-      <li>delete it, unless the law requires us to keep it</li>
-      <li>stop using it, if you had given us consent</li>
-      <li>name someone to act for you if you are unable to</li>
-    </ul>
-    <p>Email <a href="mailto:contactus@63bylane.com">contactus@63bylane.com</a> or WhatsApp <a href="https://wa.me/917710063463" target="_blank" rel="noopener">+91 77100 63463</a> with your request. We may ask you to confirm who you are, and we will respond within 90 days, usually much sooner. If you are not satisfied with our answer, you can complain to the Data Protection Board of India.</p>
-
-    <h2>Children, security and changes</h2>
-    <ul>
-      <li><b>Children:</b> our careers form is for people aged 18 or over. We do not knowingly collect data from children.</li>
-      <li><b>Security:</b> we use reputable services with encrypted connections, and only the people who need your details can see them.</li>
-      <li><b>Changes:</b> if we change this policy, we will update it on this page with a new date.</li>
-    </ul>
-
-    <h2>Contact and grievance officer</h2>
-    <p>For any privacy question or request, contact our grievance officer:</p>
-    <ul class="pv-c">
-      <li><b>Name:</b> Abhishek Jain</li>
-      <li><b>Email:</b> <a href="mailto:contactus@63bylane.com">contactus@63bylane.com</a></li>
-      <li><b>WhatsApp:</b> <a href="https://wa.me/917710063463" target="_blank" rel="noopener">+91 77100 63463</a></li>
-      <li><b>Address:</b> 63 BYLANE, Emp 56, Shop No. 63, Thakur Village, Kandivali East, Mumbai 400101</li>
-    </ul>
-  </div>
-</section>
+<section class="cr" id="cview" aria-labelledby="crh" hidden></section>
+<section class="cr" id="fview" aria-labelledby="frh" hidden></section>
+<section class="pv" id="pview" aria-labelledby="pvh" hidden></section>
 </main>
 
 <footer class="ftr"><div class="wrap">
@@ -1192,7 +838,7 @@ const FILMS=[
    {k:'focaccia',spin:0.3,word:'Focaccia',fs:18,img:'x-bocconcini',w:.8,note:'Sandwiches on focaccia baked in our own kitchen.',bg:'var(--sky)',ink:'var(--blue)',cat:'sandwiches'},
    {k:'drinks',spin:0,word:'Drinks',fs:22.5,img:'x-passion',w:.24,note:'Lemonades and iced teas, made fresh to go with everything.',bg:'var(--blue)',ink:'var(--ivory)',dark:1,cat:'drinks'},
    {k:'dessert',spin:0.35,word:'Dessert',fs:19.5,img:'x-calzone',w:.78,note:'Nutella Calzone: our pizza dough, baked with Nutella and finished with icing sugar.',bg:'var(--ivory)',ink:'var(--blue)',cat:'drinks'}];
-  const st=$('#stage'),tr=$('#stTrack'),wd=$('#stWords'),tabs=$('#stTabs'),n=ITEMS.length;let a=0;
+  const st=$('#stage'),tr=$('#stTrack'),wd=$('#stWords'),tabs=$('#stTabs'),n=ITEMS.length;let a=0;if(!st||!tr)return;
   tr.innerHTML=ITEMS.map((it,i)=>`<button class="st-it" data-i="${i}" style="--w:${it.w};--k:${it.spin}" aria-label="Show ${it.word}"><img src="/assets/${it.img}.webp" alt="${it.word} at 63 BYLANE" draggable="false"></button>`).join('');
   wd.innerHTML=ITEMS.map(it=>`<span style="--fs:${it.fs}"><b>${it.word}</b></span>`).join('');
   tabs.innerHTML=ITEMS.map((it,i)=>`<button data-i="${i}" role="tab" aria-selected="false">${it.word}</button>`).join('');tabs.setAttribute('role','tablist');
@@ -1236,7 +882,7 @@ const FILMS=[
 /* ---------- menu ---------- */
 (function(){
   const cats=$('#cats'),body=$('#cbody');
-  cats.setAttribute('role','tablist');cats.innerHTML=MENU.map(c=>`<button class="cat" role="tab" data-c="${c.id}" aria-selected="false" aria-pressed="false">${icon(c.ic)}${c.label}</button>`).join('');
+  if(cats)cats.setAttribute('role','tablist');if(cats)cats.innerHTML=MENU.map(c=>`<button class="cat" role="tab" data-c="${c.id}" aria-selected="false" aria-pressed="false">${icon(c.ic)}${c.label}</button>`).join('');
   const tag=t=>(t||[]).map(x=>x===S?icon('chilli','--s:19px;color:var(--orange)'):x===C?icon('chef','--s:19px;color:var(--orange)'):'').join('');
   const nm=(n,t)=>{const tg=tag(t);if(!tg)return n;const i=n.lastIndexOf(' ');return `${n.slice(0,i+1)}<span class="nw">${n.slice(i+1)}${tg}</span>`};
   const flag=t=>(t||[]).includes(B)?'<span class="flag">Best seller</span>':'';
@@ -1252,11 +898,11 @@ const FILMS=[
   /* favourites: six dishes on the homepage */
   const FAV=[['pizza','Burrata Pesto'],['pasta','Spaghetti Aglio Olio'],['salads','Avocado & Feta'],
              ['pizza','Truffle Overdose'],['pasta','Butter & Sage Ravioli'],['sandwiches','Burrata Pomodoro']];
-  $('#fgrid').innerHTML=FAV.map(([c,n])=>{const cat=MENU.find(m=>m.id===c),[,p,d,k,t]=cat.items.find(x=>x[0]===n);
+  const fg=$('#fgrid');if(fg)fg.innerHTML=FAV.map(([c,n])=>{const cat=MENU.find(m=>m.id===c),[,p,d,k,t]=cat.items.find(x=>x[0]===n);
     return `<a class="card" href="${ORDER}" target="_blank" rel="noopener" aria-label="${n}: opens our order menu"><div class="ph"><img src="/assets/${k}.webp" alt="${n}" width="800" height="600" loading="lazy"><span class="add"><svg width="11" height="11"><use href="#plus"/></svg>Order online</span></div><div class="tx"><span class="k">${cat.label}</span><div class="nm"><b>${nm(n,t)}</b></div><p>${d}</p></div></a>`}).join('');
 
   /* simple two-view routing: home, and #menu or #menu/<category> */
-  const homes=$$('.home'),mv=$('#mview'),VIEWS={story:$('#sview'),connect:$('#lview'),links:$('#lview'),offers:$('#lview'),careers:$('#cview'),privacy:$('#pview'),franchise:$('#fview')},all=[mv,$('#sview'),$('#lview'),$('#cview'),$('#pview'),$('#fview')];
+  const homes=$$('.home'),mv=$('#mview'),VIEWS={story:$('#sview'),connect:$('#lview'),links:$('#lview'),offers:$('#lview'),careers:$('#cview'),privacy:$('#pview'),franchise:$('#fview')},all=[mv,$('#sview'),$('#lview'),$('#cview'),$('#pview'),$('#fview')].filter(Boolean);
   const only=v=>{homes.forEach(e=>e.hidden=true);all.forEach(e=>e.hidden=e!==v)};
   function route(){const V=document.documentElement.dataset.view||'';const h=V==='menu'?'#menu/'+location.hash.slice(1):V?'#'+V:location.hash,k=h.slice(1);
     if(h.startsWith('#menu')){let id=h.split('/')[1];const dz=id==='desserts';if(dz)id='drinks';only(mv);render(MENU.some(m=>m.id===id)?id:'pizza');scrollTo(0,0);if(dz)setTimeout(()=>{const c=[...document.querySelectorAll('#cbody .card')].find(e=>/Calzone/.test(e.textContent));if(c)c.scrollIntoView({block:'center'})},120)}
@@ -1320,12 +966,12 @@ const FILMS=[
 /* ---------- videos ---------- */
 (function(){
   const EXT=document.createElement('video').canPlayType('video/mp4; codecs="avc1.42E01E"')?'mp4':'webm';
-  $('#rrow').innerHTML=FILMS.map((f,i)=>`<div class="reel"><button class="frame" data-i="${i}" aria-label="Watch ${f.name} with sound"><video src="/assets/loop-${f.k}.${EXT}" poster="/assets/loop-${f.k}.jpg" muted loop playsinline preload="none"></video><span class="snd" aria-hidden="true"><svg><use href="#vol"/></svg></span></button><b>${f.name}</b></div>`).join('');
+  const rr=$('#rrow');if(rr)rr.innerHTML=FILMS.map((f,i)=>`<div class="reel"><button class="frame" data-i="${i}" aria-label="Watch ${f.name} with sound"><video src="/assets/loop-${f.k}.${EXT}" poster="/assets/loop-${f.k}.jpg" muted loop playsinline preload="none"></video><span class="snd" aria-hidden="true"><svg><use href="#vol"/></svg></span></button><b>${f.name}</b></div>`).join('');
   const autos=$$('[data-auto]');autos.forEach(v=>v.src=`/assets/${v.dataset.auto}.${EXT}`);
   const vids=[...$$('.reel video'),...autos];
   /* captions that follow the dough film */
   const CAP=[[0,'Flour and water.'],[4,'Yeast, then a slow mix.'],[8,'Weighed and shaped by hand.'],[12,'Then rested for 48 hours.']],cap=$('#cap'),dv=$('[data-auto="dough"]');let last='';
-  dv.addEventListener('timeupdate',()=>{const t=dv.currentTime;let c=CAP[0][1];CAP.forEach(([s,x])=>{if(t>=s)c=x});if(c!==last){last=c;cap.style.opacity=0;setTimeout(()=>{cap.textContent=c;cap.style.opacity=1},300)}});
+  if(dv&&cap)dv.addEventListener('timeupdate',()=>{const t=dv.currentTime;let c=CAP[0][1];CAP.forEach(([s,x])=>{if(t>=s)c=x});if(c!==last){last=c;cap.style.opacity=0;setTimeout(()=>{cap.textContent=c;cap.style.opacity=1},300)}});
   if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!reduce)e.target.play().catch(()=>{});else e.target.pause()}),{threshold:.35});vids.forEach(v=>io.observe(v))}
   const lb=$('#lb'),lv=$('#lbv');
   function open(i){const f=FILMS[i];lv.src=`/assets/${f.k}.${EXT}`;lv.poster=`/assets/loop-${f.k}.jpg`;lv.muted=false;lv.play().catch(()=>{lv.muted=true;lv.play().catch(()=>{})});
